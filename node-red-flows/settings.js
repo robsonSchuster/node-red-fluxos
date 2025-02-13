@@ -1,9 +1,9 @@
 module.exports = {
-    // Define o caminho do arquivo de fluxos
-    //flowsFile: '/opt/render/node-red-flows/flows.json',
-    flowsFile: '/opt/render/project/src/node-red-fluxos/flows.json',
+    // Define o caminho do arquivo de fluxos, com fallback para uma variável de ambiente
+    flowsFile: process.env.FLOWS_FILE || '/opt/render/node-red-flows/flows.json',
+    
     // Define uma senha segura para criptografar credenciais
-    credentialSecret: "minhaSenhaSegura",
+    credentialSecret: process.env.CREDENTIAL_SECRET || "minhaSenhaSegura",
 
     // Configura a porta do servidor, caso não seja definida no ambiente
     uiPort: process.env.PORT || 1880,
