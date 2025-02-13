@@ -1,7 +1,7 @@
 module.exports = {
     // Define o caminho do arquivo de fluxos
-    flowsFile: '/opt/render/node-red-flows/flows.json',
-    
+    //flowsFile: '/opt/render/node-red-flows/flows.json',
+    flowsFile: '/opt/render/project/src/node-red-fluxos/flows.json',
     // Define uma senha segura para criptografar credenciais
     credentialSecret: "minhaSenhaSegura",
 
