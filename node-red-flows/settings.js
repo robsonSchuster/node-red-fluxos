@@ -1,6 +1,6 @@
 module.exports = {
-    // Define o caminho do arquivo de fluxos, com fallback para uma variável de ambiente
-    flowsFile: process.env.FLOWS_FILE || '/opt/render/node-red-flows/flows.json',
+    // Define o caminho do arquivo de fluxos, ajustado para o local correto no repositório
+    flowsFile: process.env.FLOWS_FILE || '/opt/render/project/src/node-red-fluxos/node-red-flows/flows.json',
     
     // Define uma senha segura para criptografar credenciais
     credentialSecret: process.env.CREDENTIAL_SECRET || "minhaSenhaSegura",
