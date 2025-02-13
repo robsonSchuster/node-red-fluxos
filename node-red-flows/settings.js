@@ -1,9 +1,16 @@
 module.exports = {
-   flowFile: '/opt/render/project/src/data/flows.json', // Caminho correto para o flows.json
-  credentialSecret: "sua-chave-secreta", // Adicione uma chave secreta para criptografar credenciais
-    uiPort: process.env.PORT || 1880, // porta do servidor
-    userDir: '/opt/render/node-red-flows', // diretório de usuário do Node-RED
-    editorTheme: {
-        projects: { enabled: false } // desabilita projetos
+  flowFile: '/opt/render/project/src/data/flows.json', // Caminho para o arquivo de flows
+  credentialSecret: "sua-chave-secreta", // Chave secreta para criptografar credenciais
+  adminAuth: null, // Autenticação de administrador (opcional)
+  httpNodeRoot: '/', // Raiz da API HTTP
+  httpAdminRoot: '/admin', // Raiz da interface de administração
+  userDir: '/opt/render/.node-red', // Diretório de usuário
+  functionGlobalContext: {}, // Contexto global para funções
+  logging: {
+    console: {
+      level: 'info', // Nível de log
+      metrics: false,
+      audit: false
     }
+  }
 };
