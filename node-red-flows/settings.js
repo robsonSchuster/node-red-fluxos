@@ -1,9 +1,6 @@
 module.exports = {
-  // Caminho para o arquivo de flows
-  flowFile: '/opt/render/project/src/data/flows.json',
-
-  // Chave secreta para criptografar credenciais (substitua por uma chave segura)
-  credentialSecret: "sua-chave-secreta-aqui",
+  flowFile: '/opt/render/project/src/data/flows.json', // Caminho para o arquivo de flows
+  credentialSecret: "sua-chave-secreta-aqui", // Chave secreta para criptografar credenciais
 
   // Configurações de autenticação (opcional)
   adminAuth: null,
